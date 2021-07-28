@@ -1,0 +1,66 @@
+
+/* --- branding --- */
+.branding-container {
+  display: flex;
+  align-items: center;
+
+  padding: var(--sp-normal);
+}
+
+.branding-container img {
+  width: 28px;
+  height: 28px;
+}
+.branding-container > div {
+  display: flex;
+  align-items: baseline;
+}
+.branding-container > div .text-h2 {
+  margin: 0 var(--sp-normal);
+}
+.branding-container > div .text-s1 {
+  padding-left: var(--sp-normal);
+  border-left: 1px solid var(--bg-surface-border);
+}
+
+/* --- grid --- */
+.base-grid-12 {
+  display: grid;
+  grid-column-gap: var(--sp-loose);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* --- button --- */
+.btn-primary,
+.btn-surface {
+  padding: var(--sp-extra-tight) var(--sp-normal);
+  border-radius: var(--bo-radius);
+  cursor: pointer;
+}
+.btn-large {
+  padding: var(--sp-tight) calc(var(--sp-loose) + var(--sp-ultra-tight));
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+}
+.btn-surface {
+  box-shadow: var(--bs-surface-border);
+}
+.btn-primary [class^="text"] {
+  color: var(--tc-primary-high)
+}
+.btn-primary:active {
+  background-color: var(--bg-primary-active);
+}
+.btn-surface:active {
+  background-color: var(--bg-surface-active);
+}
+@media(hover: hover) {
+  .btn-primary:hover {
+    background-color: var(--bg-primary-hover);
+  }
+  .btn-surface:hover {
+    background-color: var(--bg-surface-hover);
+  }
+}

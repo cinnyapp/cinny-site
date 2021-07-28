@@ -1,0 +1,57 @@
+.scrollbar {
+  /* firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-surface-hover) transparent;
+  overflow: hidden;
+
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bg-surface-hover);
+}
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: var(--bg-surface-hover);
+}
+
+
+.scrollbar__h {
+  overflow-x: scroll;
+}
+.scrollbar__v {
+  overflow-y: scroll;
+}
+
+
+
+
+.scrollbar--auto-hide {
+  /* firefox */
+  scrollbar-color: transparent transparent;
+}
+.scrollbar--auto-hide::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.scrollbar--auto-hide:hover {
+  scrollbar-color: var(--bg-surface-hover) transparent;
+}
+
+
+
+/* invisible scrollbar but contain will scroll */
+.scrollbar--invisible {
+  /* firefox */
+  scrollbar-color: transparent transparent;
+}
+.scrollbar--invisible::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.scrollbar--invisible:hover::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
