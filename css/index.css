@@ -251,15 +251,6 @@
 }
 .about__info__btns .btn-support {
   margin-top: var(--sp-normal);
-  background-color: var(--bg-caution-border);
-}
-@media (hover: hover) {
-  .btn-support:hover {
-    background-color: var(--bg-caution-hover);
-  }
-}
-.btn-support:active {
-  background-color: var(--bg-caution-active);
 }
 
 /* footer */
