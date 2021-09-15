@@ -31,6 +31,11 @@
 }
 
 /* --- button --- */
+
+a.btn-primary,
+a.btn-surface {
+  display: inline-block;
+}
 .btn-primary,
 .btn-surface {
   padding: var(--sp-extra-tight) var(--sp-normal);

@@ -89,7 +89,7 @@
 .hero__intro > p {
   margin: var(--sp-extra-loose) 0;
 }
-.hero__intro__btns > button {
+.hero__intro__btns > [class^=btn] {
   margin-top: var(--sp-normal);
   margin-right: var(--sp-normal);
 }
