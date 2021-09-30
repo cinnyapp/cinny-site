@@ -249,8 +249,53 @@
   display: inline-flex;
   flex-direction: column;
 }
-.about__info__btns .btn-support {
-  margin-top: var(--sp-normal);
+
+/* support */
+.support {
+  padding: 100px 0 50px;
+  background-color: var(--bg-surface-low);
+  border-top: 1px solid var(--bg-surface-border);
+
+  background-image: radial-gradient(var(--bg-surface-border) 2px, transparent 2px);
+  background-size: 48px 48px;
+}
+.support__info {
+  grid-column: 1 / 5;
+  padding-bottom: 50px;
+}
+.support__info > .text-b1 {
+  margin: var(--sp-extra-loose) 0 var(--sp-extra-tight);
+}
+.support__info .btn-large {
+  margin-top: var(--sp-tight);
+  margin-right: var(--sp-tight);
+}
+.support__list {
+  grid-column: 7 / 13;
+}
+.support__container {
+  padding: var(--sp-loose) 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.support__label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.support__container a {
+  margin: 0 var(--sp-normal) var(--sp-normal) 0;
+}
+.support__container .supporterProfile {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--bo-radius);
+  background-color: var(--bg-positive-active);
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer */
@@ -330,7 +375,8 @@
 
 @media screen and (max-width: 1112px) {
   .hero > .base-grid-12,
-  .features > .base-grid-12 {
+  .features > .base-grid-12,
+  .support > .base-grid-12 {
     display: block;
   }
   .hero__preview__container {
@@ -342,7 +388,8 @@
     height: calc(var(--preview-height) / 2.5);
   }
   .hero__info,
-  .features__info {
+  .features__info,
+  .support__info {
     max-width: 412px;
   }
   .hero__intro {
