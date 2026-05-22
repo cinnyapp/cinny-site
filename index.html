@@ -41,151 +41,152 @@
         </div>
       </div>
     </nav>
-    <section class="hero">
-      <div class="base-grid-12">
-        <div class="hero__info">
-          <div class="hero__intro">
-            <h1 class="text-h1">Imagine a <a href="https://matrix.org" target="_blank">Matrix</a> client...</h1>
-            <p class="text-b1">Where you can enjoy the conversation using <b style="color: var(--tc-surface-high)">simple, elegant and secure</b> interface protected by e2ee with the power of open source.</p>
-            <div class="hero__intro__btns">
-              <a class="btn-primary btn-large" href="https://app.cinny.in">
-                <span class="text-s1">Open Cinny</span>
+    <main>
+      <section class="hero" aria-label="intro">
+        <div class="base-grid-12">
+          <div class="hero__info">
+            <div class="hero__intro">
+              <h1 class="text-h1">Imagine a <a href="https://matrix.org" target="_blank">Matrix</a> client...</h1>
+              <p class="text-b1">Where you can enjoy the conversation using <b style="color: var(--tc-surface-high)">simple, elegant and secure</b> interface protected by e2ee with the power of open source.</p>
+              <div class="hero__intro__btns">
+                <a class="btn-primary btn-large" href="https://app.cinny.in">
+                  <span class="text-s1">Open Cinny</span>
+                </a>
+                <a class="btn-surface btn-large" href="#features">
+                  <span class="text-s1">Learn more</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__preview">
+            <div class="hero__preview__container">
+              <img id="previewImage" src="assets/preview-light.png" alt="Cinny preview image">
+              <p class="text-b3">Preview from chrome (desktop)</p>
+            </div>
+          </div>
+
+          <div class="hero__info">
+            <div class="themes">
+              <h4 class="text-s1">Themes</h4>
+              <p id="themeStatus" class="text-b3">Selected: light</p>
+              <div class="themes__btn">
+                <button onclick="changeTheme(this)" themeName="" class="theme-btn theme-btn--light theme-btn--active" />
+                <button onclick="changeTheme(this)" themeName="silver-theme" class="theme-btn theme-btn--silver" />
+                <button onclick="changeTheme(this)" themeName="dark-theme" class="theme-btn theme-btn--dark" />
+                <button onclick="changeTheme(this)" themeName="butter-theme" class="theme-btn theme-btn--butter" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features" aria-labeledby="features-h1">
+        <div class="base-grid-12">
+          <div class="features__info">
+            <h1 class="text-h1" id="feature-h1">Features</h1>
+            <p class="text-b1">You will have a pleasant experience because the overall look of Cinny is built using commonly used design patterns with micro enhancement.</p>
+          </div>
+        </div>
+        <div class="features__list">
+          <div class="scrollbar scrollbar__h scrollbar--auto-hide">
+            <div class="feature__cards">
+
+              <div class="feat-card">
+                <div class="feat-card__preview">
+                  <img class="feat-img" style="transform: translate(6%, 1%) rotate(15deg);" src="assets/preview-light.png" alt="cinny preview image">
+                </div>
+                <div class="feat-card__info">
+                  <h2 class="text-h2">Organized</h2>
+                  <p class="text-b1">Navigation is easy now because we organized DMs separate from channels.</p>
+                </div>
+              </div>
+
+              <div class="feat-card">
+                <div class="feat-card__preview">
+                  <img class="feat-img" style="transform: translate(2.8%, -34%);" src="assets/preview-light.png" alt="cinny preview image">
+                </div>
+                <div class="feat-card__info">
+                  <h2 class="text-h2">No more clutter</h2>
+                  <p class="text-b1">You will see what's necessary to give you a better visual feedback.</p>
+                </div>
+              </div>
+
+              <div class="feat-card">
+                <div class="feat-card__preview">
+                  <img class="feat-img" style="transform: translate(-21%, -80%);" src="assets/preview-light.png" alt="cinny preview image">
+                </div>
+                <div class="feat-card__info">
+                  <h2 class="text-h2">Input that matters</h2>
+                  <p class="text-b1">An interface which adapts to your actions without making you feel uncomfortable.</p>
+                </div>
+              </div>
+
+              <div class="feat-card">
+                <div class="feat-card__preview">
+                  <img class="feat-img" style="transform: translate(-23%, 4%);" src="assets/preview-light.png" alt="cinny preview image">
+                </div>
+                <div class="feat-card__info">
+                  <h2 class="text-h2">Calm visual</h2>
+                  <p class="text-b1">Everything is properly aligned and formatted to give you a calm feeling.</p>
+                </div>
+              </div>
+
+              <div class="feat-card" style="text-align: center; display: flex; align-items: center;">
+                <div class="feat-card__info">
+                  <h2 class="text-h2">Lot more to come</h2>
+                  <p class="text-b1">We are constantly working on Cinny to make it a better place. A place for communication like never seen before.</p>
+                </div>
+              </div>
+
+              <div style="min-width: var(--sp-extra-loose);"></div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-h1">
+        <div class="base-grid-12">
+          <div class="about__info">
+            <img src="assets/cinny.svg" alt="Cinny logo" />
+            <h1 class="text-h1" id="about-h1">Cinny ❤ open source</h1>
+            <p class="text-b1">Cinny<sup><a title="It is named after The purple sunbird (Cinnyris asiaticus)." href="https://en.wikipedia.org/wiki/Purple_sunbird" target="_blank">[1]</a></sup> is built on top of<a href="https://matrix.org" target="_blank">Matrix</a> — An open network for secure, decentralized communication. We have also made the source code of Cinny open to everyone, so you can enhance, modify and inspect it.</p>
+
+            <div class="about__info__btns">
+              <a class="btn-surface btn-large" href="https://github.com/ajbura/cinny" target="_blank">
+                <span class="text-b1">Source code</span>
               </a>
-              <a class="btn-surface btn-large" href="#features">
-                <span class="text-s1">Learn more</span>
-              </a>
             </div>
           </div>
         </div>
-        
-        <div class="hero__preview">
-          <div class="hero__preview__container">
-            <img id="previewImage" src="assets/preview-light.png" alt="Cinny preview image">
-            <p class="text-b3">Preview from chrome (desktop)</p>
-          </div>
-        </div>
+      </section>
 
-        <div class="hero__info">
-          <div class="themes">
-            <h4 class="text-s1">Themes</h4>
-            <p id="themeStatus" class="text-b3">Selected: light</p>
-            <div class="themes__btn">
-              <button onclick="changeTheme(this)" themeName="" class="theme-btn theme-btn--light theme-btn--active" />
-              <button onclick="changeTheme(this)" themeName="silver-theme" class="theme-btn theme-btn--silver" />
-              <button onclick="changeTheme(this)" themeName="dark-theme" class="theme-btn theme-btn--dark" />
-              <button onclick="changeTheme(this)" themeName="butter-theme" class="theme-btn theme-btn--butter" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section id="features" class="features">
-      <div class="base-grid-12">
-        <div class="features__info">
-          <h1 class="text-h1">Features</h1>
-          <p class="text-b1">You will have a pleasant experience because the overall look of Cinny is built using commonly used design patterns with micro enhancement.</p>
-        </div>
-      </div>
-      <div class="features__list">
-        <div class="scrollbar scrollbar__h scrollbar--auto-hide">
-          <div class="feature__cards">
-
-            <div class="feat-card">
-              <div class="feat-card__preview">
-                <img class="feat-img" style="transform: translate(6%, 1%) rotate(15deg);" src="assets/preview-light.png" alt="cinny preview image">
-              </div>
-              <div class="feat-card__info">
-                <h2 class="text-h2">Organized</h2>
-                <p class="text-b1">Navigation is easy now because we organized DMs separate from channels.</p>
-              </div>
-            </div>
-
-            <div class="feat-card">
-              <div class="feat-card__preview">
-                <img class="feat-img" style="transform: translate(2.8%, -34%);" src="assets/preview-light.png" alt="cinny preview image">
-              </div>
-              <div class="feat-card__info">
-                <h2 class="text-h2">No more clutter</h2>
-                <p class="text-b1">You will see what's necessary to give you a better visual feedback.</p>
-              </div>
-            </div>
-
-            <div class="feat-card">
-              <div class="feat-card__preview">
-                <img class="feat-img" style="transform: translate(-21%, -80%);" src="assets/preview-light.png" alt="cinny preview image">
-              </div>
-              <div class="feat-card__info">
-                <h2 class="text-h2">Input that matters</h2>
-                <p class="text-b1">An interface which adapts to your actions without making you feel uncomfortable.</p>
-              </div>
-            </div>
-
-            <div class="feat-card">
-              <div class="feat-card__preview">
-                <img class="feat-img" style="transform: translate(-23%, 4%);" src="assets/preview-light.png" alt="cinny preview image">
-              </div>
-              <div class="feat-card__info">
-                <h2 class="text-h2">Calm visual</h2>
-                <p class="text-b1">Everything is properly aligned and formatted to give you a calm feeling.</p>
-              </div>
-            </div>
-            
-            <div class="feat-card" style="text-align: center; display: flex; align-items: center;">
-              <div class="feat-card__info">
-                <h2 class="text-h2">Lot more to come</h2>
-                <p class="text-b1">We are constantly working on Cinny to make it a better place. A place for communication like never seen before.</p>
-              </div>
-            </div>
-
-            <div style="min-width: var(--sp-extra-loose);"></div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="base-grid-12">
-        <div class="about__info">
-          <img src="assets/cinny.svg" alt="Cinny logo" />
-          <h1 class="text-h1">Cinny ❤ open source</h1>
-          <p class="text-b1">Cinny<sup><a title="It is named after The purple sunbird (Cinnyris asiaticus)." href="https://en.wikipedia.org/wiki/Purple_sunbird" target="_blank">[1]</a></sup> is built on top of <a href="https://matrix.org" target="_blank">Matrix</a> — An open network for secure, decentralized communication. We have also made the source code of Cinny open to everyone, so you can enhance, modify and inspect it.</p>
-
-          <div class="about__info__btns">
-            <a class="btn-surface btn-large" href="https://github.com/ajbura/cinny" target="_blank">
-              <span class="text-b1">Source code</span>
+      <section id="sponsor" class="support" aria-labelledby="sponsor-h1">
+        <div class="base-grid-12">
+          <div class="support__info">
+            <h1 class="text-h1" id="sponsor-h1">Financial contribution</h1>
+            <p class="text-b1">Support this project by becoming a financial contributor.</p>
+            <a class="btn-surface btn-large" href="https://opencollective.com/cinny" target="_blank">
+              <span class="text-b1">Open Collective</span>
+            </a>
+            <a class="btn-surface btn-large" href="https://github.com/sponsors/ajbura" target="_blank">
+              <span class="text-b1">GitHub Sponsors</span>
+            </a>
+            <a class="btn-surface btn-large" href="https://liberapay.com/ajbura/donate" target="_blank">
+              <span class="text-b1">Liberapay</span>
             </a>
           </div>
+          <div class="support__list">
+            <p class="support__label text-b2">Organizations</p>
+            <div id="supportOrg" class="support__container"></div>
+            <p class="support__label text-b2">Individuals</p>
+            <div id="supportInd" class="support__container"></div>
+          </div>
         </div>
-      </div>
-    </section>
-    
-    <section id="sponsor" class="support">
-      <div class="base-grid-12">
-        <div class="support__info">
-          <h1 class="text-h1">Financial contribution</h1>
-          <p class="text-b1">Support this project by becoming a financial contributor.</p>
-          <a class="btn-surface btn-large" href="https://opencollective.com/cinny" target="_blank">
-            <span class="text-b1">Open Collective</span>
-          </a>
-          <a class="btn-surface btn-large" href="https://github.com/sponsors/ajbura" target="_blank">
-            <span class="text-b1">GitHub Sponsors</span>
-          </a>
-          <a class="btn-surface btn-large" href="https://liberapay.com/ajbura/donate" target="_blank">
-            <span class="text-b1">Liberapay</span>
-          </a>
-        </div>
-        <div class="support__list">
-          <p class="support__label text-b2">Organizations</p>
-          <div id="supportOrg" class="support__container"></div>
-          <p class="support__label text-b2">Individuals</p>
-          <div id="supportInd" class="support__container"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer">
+      </section>
+    </main>
+    <footer class="footer">
       <div class="base-grid-12">
         <div class="footer__branding">
           <div class="branding-container">
@@ -225,7 +226,7 @@
 
         <p class="footer__creator text-b3">Copyright © 2021 <a href="https://ajbura.github.io" target="_blank">Ajay Bura (ajbura)</a> • <a href="https://github.com/cinnyapp/cinny-site" target="_blank">Source code</a></p>
       </div>
-    </section>
+    </footer>
   </div>
 
   <script src="main.js"></script>

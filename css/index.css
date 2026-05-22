@@ -11,7 +11,8 @@
   --preview-height: 1080px;
 }
 
-#root section > .base-grid-12 {
+#root main > section > .base-grid-12,
+#root footer > .base-grid-12 {
   margin: auto;
   padding: 0 var(--section-side-padding);
   max-width: var(--section-max-width);
@@ -41,6 +42,12 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: var(--sp-normal);
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -428,7 +435,6 @@
   :root {
     --navbar-height:61.6px;
   }
-  
   .branding-container > div .text-s1 {
     display: none;
   }
